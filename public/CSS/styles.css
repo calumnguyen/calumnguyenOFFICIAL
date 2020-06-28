@@ -91,7 +91,7 @@ align: center;
 /* Please help */
   position: absolute;
   top: 5%;
-  left: 15%;
+  left: 14rem;
   transform: translate(-5%, -50%);
   z-index: 2;
 }
@@ -129,9 +129,10 @@ align: center;
   }
 
   .dropdown {
+    left: auto;
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 6rem;
     transform: translate(-5%, -50%);
     z-index: 2;
   }
