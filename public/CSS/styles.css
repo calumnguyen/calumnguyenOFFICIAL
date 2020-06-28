@@ -87,6 +87,11 @@ left: 5%;
 align: center;
 }
 
+@media screen and (max-width: 732px) {
+  .nav-links {
+    height: 50vh;
+}
+
 @media screen and (max-width: 992px) {
 
   .profile-image {
