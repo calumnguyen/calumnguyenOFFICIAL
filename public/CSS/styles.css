@@ -116,9 +116,8 @@ align: center;
   }
 
   .dropdown {
-  position: fixed;
-  top: 2.8%;
-  right: 15%;
+  position: relative;
+
   }
 
   .nav-links {
@@ -134,8 +133,8 @@ align: center;
   }
 
   .open {
-    clip-path: circle(2000px at 90% -10%);
-    -webkit-clip-path: circle(2000px at 90% -10%);
+    clip-path: circle(2080px at 90% -10%);
+    -webkit-clip-path: circle(2080px at 90% -10%);
     pointer-events: all;
   }
 
