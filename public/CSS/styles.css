@@ -58,6 +58,7 @@ font-family: 'Montserrat', sans-serif;
 font-weight: 900;
 font-size: 3.5rem;
 line-height: 1.5;
+margin-top: 6rem;
 }
 
 #title {
@@ -80,7 +81,7 @@ text-align: left;
 .profile-image {
 width: 75%;
 position: relative;
-top: 5%;
+top: 0.5rem;
 bottom: 15%;
 left: 5%;
 align: center;
@@ -112,6 +113,12 @@ align: center;
     top: 50%;
     transform: translate(-5%, -50%);
     z-index: 2;
+  }
+
+  .dropdown {
+  position: fixed;
+  top: 2.8%;
+  right: 15%;
   }
 
   .nav-links {
