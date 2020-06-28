@@ -116,8 +116,7 @@ align: center;
   }
 
   .dropdown {
-  position: relative;
-
+  /* Please help */
   }
 
   .nav-links {
@@ -133,8 +132,8 @@ align: center;
   }
 
   .open {
-    clip-path: circle(1700px at 90% -10%);
-    -webkit-clip-path: circle(1700px at 90% -10%);
+    clip-path: circle(2050px at 90% -10%);
+    -webkit-clip-path: circle(2500px at 90% -10%);
     pointer-events: all;
   }
 
