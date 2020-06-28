@@ -117,6 +117,9 @@ align: center;
 
   .dropdown {
   /* Please help */
+    position: fixed;
+    top: 2vh;
+    right: 18vh;
   }
 
   .nav-links {
