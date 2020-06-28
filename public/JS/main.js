@@ -7,3 +7,8 @@ $('.hamburger').click(function(){
   //when this happens, hide everything that is not nav
   $('.not-nav').toggleClass('hide');
 });
+
+// $('#resume').click(function(e){
+//   e.preventDefault();
+//   window.location.href = 'DOCS/CalumNguyen_Resume_2020.pdf';
+// });
