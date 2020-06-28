@@ -61,7 +61,7 @@ line-height: 1.5;
 }
 
 #title {
-padding: 3% 15% 7%;
+padding: 3% 15%;
 text-align: left;
 }
 
@@ -80,18 +80,11 @@ text-align: left;
 .profile-image {
 width: 75%;
 position: relative;
+top: 5%;
 bottom: 15%;
 left: 5%;
 align: center;
 }
-
-/* @media screen and (min-width: 993px) {
-  .nav-links {
-    clip-path: circle(10px at 90% -10%);
-    -webkit-clip-path: circle(10px at 90% -10%);
-    transition: all 1.5s ease-out;
-  }
-} */
 
 @media screen and (max-width: 992px) {
 
