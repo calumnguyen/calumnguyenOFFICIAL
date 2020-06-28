@@ -134,6 +134,8 @@ align: center;
 
   .nav-links {
     position: fixed;
+    padding-top: 10%;
+    padding-bottom: 15%;
     background: #252a34;
     height: 100vh;
     width: 100%;
@@ -158,11 +160,6 @@ align: center;
   .nav-tags {
     font-size: 25px;
     opacity: 0;
-  }
-
-  .nav-lists {
-    margin-top: 2%;
-    margin-bottom: 2%;
   }
 
   .nav-tags:nth-child(1){
