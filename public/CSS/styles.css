@@ -98,6 +98,10 @@ align: center;
 
 @media screen and (max-width: 992px) {
 
+  #title {
+    padding-bottom: 15%;
+  }
+
   .profile-image {
     top: 1px;
     width: 50%;
