@@ -87,6 +87,15 @@ left: 5%;
 align: center;
 }
 
+.dropdown {
+/* Please help */
+  position: absolute;
+  top: 5%;
+  left: 18%;
+  transform: translate(-5%, -50%);
+  z-index: 2;
+}
+
 @media screen and (max-width: 992px) {
 
   .profile-image {
@@ -116,7 +125,6 @@ align: center;
   }
 
   .dropdown {
-  /* Please help */
     position: absolute;
     top: 50%;
     right: 10%;
@@ -140,6 +148,7 @@ align: center;
     clip-path: circle(2050px at 90% -10%);
     -webkit-clip-path: circle(2050px at 90% -10%);
     pointer-events: all;
+
   }
 
   .hide {
