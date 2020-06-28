@@ -87,11 +87,6 @@ left: 5%;
 align: center;
 }
 
-@media screen and (max-width: 732px) {
-  .nav-links {
-    height: 50vh;
-}
-
 @media screen and (max-width: 992px) {
 
   .profile-image {
@@ -138,8 +133,8 @@ align: center;
   }
 
   .open {
-    clip-path: circle(2080px at 90% -10%);
-    -webkit-clip-path: circle(2080px at 90% -10%);
+    clip-path: circle(1700px at 90% -10%);
+    -webkit-clip-path: circle(1700px at 90% -10%);
     pointer-events: all;
   }
 
