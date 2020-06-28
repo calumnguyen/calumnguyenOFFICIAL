@@ -160,6 +160,11 @@ align: center;
     opacity: 0;
   }
 
+  .nav-lists {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
   .nav-tags:nth-child(1){
     transition: all 1s ease 0.2s;
   }
