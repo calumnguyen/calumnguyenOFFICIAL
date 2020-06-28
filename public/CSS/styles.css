@@ -154,8 +154,8 @@ align: center;
   }
 
   .open {
-    clip-path: circle(1027px at 90% -10%);
-    -webkit-clip-path: circle(1027px at 90% -10%);
+    clip-path: circle(2000px at 90% -10%);
+    -webkit-clip-path: circle(2000px at 90% -10%);
     pointer-events: all;
 
   }
