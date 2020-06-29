@@ -16,6 +16,8 @@ var alertMessage = [
 
 const randomNumber = Math.floor(Math.random()*3);
 
-setTimeout(function(){
-  alert(alertMessage[randomNumber]);
-}, 2000 );
+$(document).one('mouseleave', function(){
+  setTimeout(function(){
+    alert(alertMessage[randomNumber]);
+  }, 1000);
+});
