@@ -7,3 +7,15 @@ $('.hamburger').click(function(){
   //when this happens, hide everything that is not nav
   $('.not-nav').toggleClass('hide');
 });
+
+var alertMessage = [
+  "It's still a rocky road... However, I would love to hear your feedback! Download my resume and connect with me today!",
+  "Unde-lorem Construct-ipsom! However, I would love to hear your feedback! Download my resume and connect with me today!",
+  "Under Construction... However, I would love to hear your feedback on it! Download my resume and connect with me today!!",
+]
+
+const randomNumber = Math.floor(Math.random()*3);
+
+setTimeout(function(){
+  alert(alertMessage[randomNumber]);
+}, 2000 );
