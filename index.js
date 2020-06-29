@@ -28,10 +28,11 @@ app.set('view engine', 'ejs');
     connect: "Kết Nối",
     portfolio: "Portfolio",
     hello: "Mình là ",
-    helloTwo: " Thật vui khi được bạn đến thăm!",
+    helloTwo: " Rất vui khi được bạn đến thăm!",
     intro: "Cho mình được tự giới thiệu về bản thân",
     introTwo: "Đang vội? Đọc sơ qua Resume!"
   };
+
 app.get('/vnm', function(req, res){
   res.render('index', {language:vnm.language, about:vnm.about, connect:vnm.connect, portfolio:vnm.portfolio, hello:vnm.hello, helloTwo:vnm.helloTwo, intro:vnm.intro, introTwo:vnm.introTwo});
 })
