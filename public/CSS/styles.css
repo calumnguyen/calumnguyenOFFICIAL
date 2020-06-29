@@ -81,11 +81,11 @@ text-align: left;
 }
 
 .profile-image {
-width: 75%;
+width: 100%;
 position: relative;
 top: 0.5rem;
 bottom: 15%;
-left: 5%;
+left: auto;
 align: center;
 }
 
@@ -106,7 +106,7 @@ align: center;
 
   .profile-image {
     top: 1px;
-    width: 50%;
+    width: 80%;
   }
 
   .line {
