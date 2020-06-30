@@ -44,11 +44,11 @@ app.get('/', function(req, res){
 })
 
 app.get('/vnm-hello', function(req, res){
-  res.render('introduction', {language:vnm.language, about:vnm.about, connect:vnm.connect, portfolio:vnm.portfolio});
+  res.render('introduction', {language:vnm.language, about:vnm.about, connect:vnm.connect, portfolio:vnm.portfolio, git:vnm.git});
 })
 
 app.get('/hello', function(req, res){
-  res.render('introduction', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio});
+  res.render('introduction', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio, git:eng.git});
 })
 
 
