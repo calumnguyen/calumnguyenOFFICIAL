@@ -46,6 +46,7 @@ nav {
 
 .introduction-button {
 margin: 5% 3% 2% 0;
+text-decoration: none;
 }
 
 .colored-section {
@@ -96,6 +97,32 @@ align: center;
   left: 14rem;
   transform: translate(-5%, -50%);
   z-index: 2;
+}
+
+
+.bottom-container {
+  background-color: #252a34;
+  padding: 30px 0 20px;
+  text-align: center;
+}
+
+.footer-link {
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #ff2e63;
+  text-decoration: none;
+}
+
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0px;
 }
 
 @media screen and (max-width: 992px) {
@@ -185,9 +212,10 @@ align: center;
     opacity: 1;
   }
 
-  .introduction-button {
+  /* .introduction-button {
     display: block;
     width: auto;
     font-size: auto;
-  }
+    text-decoration: none;
+  } */
 }
