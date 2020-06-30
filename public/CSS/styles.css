@@ -186,7 +186,8 @@ align: center;
   }
 
   .introduction-button {
-    max-width: 100vh;
-    font-size: 135%;
+    display: block;
+    max-width: 110%;
+    font-size: 80%;
   }
 }
