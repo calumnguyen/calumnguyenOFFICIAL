@@ -26,11 +26,11 @@ app.set('view engine', 'ejs');
     language: "Tiếng Việt ",
     about: "Giới Thiệu",
     connect: "Kết Nối",
-    portfolio: "Portfolio",
+    portfolio: "Hồ Sơ Năng Lực",
     hello: "Mình là ",
     helloTwo: " Rất vui khi được bạn đến thăm!",
     intro: "Cho mình được tự giới thiệu về bản thân",
-    introTwo: "Đang vội? Đọc sơ qua Resume!"
+    introTwo: "Nếu bạn đang vội, xem qua bản tóm tắt ở đây nhé!"
   };
 
 app.get('/vnm', function(req, res){
