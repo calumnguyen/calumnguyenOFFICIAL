@@ -18,52 +18,31 @@
       <div class="line"></div>
       <div class="line"></div>
     </div>
+    <div class="dropdown">
+      <button class="btn btn-secondary btn-small dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=language%></button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="/">English</a>
+        <a class="dropdown-item" href="/vnm">Tiếng Việt</a>
+      </div>
+    </div>
 
     <ul class="nav-links">
-      <div class="dropdown">
-        <button class="btn btn-secondary btn-small dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=language%></button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="/">English</a>
-          <a class="dropdown-item" href="/vnm">Tiếng Việt</a>
-        </div>
-      </div>
+
       <li><a class="nav-tags" href="#"><%=about%></a></li>
       <li><a class="nav-tags" href="#"><%=connect%></a></li>
       <li><a class="nav-tags" href="#"><%=portfolio%>s</a></li>
     </ul>
   </nav>
 
-  <section class="not-nav">
-    <section class="colored-section" id="title">
-      <div class='row'>
-        <div class='col-lg-6'>
-          <h1 class='index-description'><%=hello%> <span class="calum">Calum</span>. <%=helloTwo%></h1>
-          <button type='button' class='btn btn-outline-light btn-lg introduction-button'><%=intro%><i class="fas fa-arrow-circle-right"></i></button>
-          <button type='button' class='btn btn-dark btn-lg introduction-button'><%=introTwo%><i class="fas fa-arrow-circle-down"></i></button>
-        </div>
-        <div class='col-lg-6'>
-          <img class='profile-image' src='images/profile.png' alt='profile-image'>
-        </div>
-      </div>
-    </section>
-    <section class="noncolored-section">
-
-
-    </section>
-  </section>
-
-
-
 
 
 
 
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-  <script src='JS/main.js' charset='utf-8'></script>
+  <script src='JS/introduction.js' charset='utf-8'></script>
   <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous'></script>
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous'></script>
-
 </body>
 
 </html>

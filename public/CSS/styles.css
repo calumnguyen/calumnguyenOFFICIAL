@@ -106,7 +106,7 @@ align: center;
 
   .profile-image {
     top: 1px;
-    width: 80%;
+    width: 100%;
   }
 
   .line {
@@ -186,7 +186,7 @@ align: center;
   }
 
   .introduction-button {
-    max-width: 90vh;
+    max-width: 100vh;
     font-size: 120%;
   }
 }

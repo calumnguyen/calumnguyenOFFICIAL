@@ -28,17 +28,19 @@
 
     <ul class="nav-links">
 
-      <li><a class="nav-tags" href="#"><%=about%></a></li>
-      <li><a class="nav-tags" href="#"><%=connect%></a></li>
-      <li><a class="nav-tags" href="#"><%=portfolio%>s</a></li>
+      <li><a class="nav-tags" id="about"><%=about%></a></li>
+      <li><a class="nav-tags" href="#" id="connect"><%=connect%></a></li>
+      <li><a class="nav-tags" href="#" id="portfolio"><%=portfolio%>s</a></li>
     </ul>
   </nav>
 
   <section class="colored-section" id="title">
     <div class='row'>
       <div class='col-lg-6'>
-        <h1 class='index-description'><%=hello%> <span class="calum">Calum</span>. <%=helloTwo%></h1>
-        <button type='button' class='btn btn-outline-light btn-lg introduction-button'><%=intro%><i class="fas fa-arrow-circle-right"></i></button>
+        <h1 class='index-description'><%=hello%><span class="calum">Calum</span>. <%=helloTwo%></h1>
+        <a id="link">
+          <button type='button' class='btn btn-outline-light btn-lg introduction-button'><%=intro%><i class="fas fa-arrow-circle-right"></i></button>
+        </a>
         <a href="DOCS/CalumNguyen_Resume_2020.pdf" download="Resume-CalumNguyen">
           <button type='button' class='btn btn-dark btn-lg introduction-button' ><%=introTwo%><i class="fas fa-arrow-circle-down"></i></button>
         </a>
