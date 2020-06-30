@@ -32,7 +32,7 @@ app.set('view engine', 'ejs');
     helloTwo: " Rất vui khi được bạn đến thăm!",
     intro: "Cho mình được tự giới thiệu về bản thân",
     introTwo: "Nếu bạn đang vội, xem qua bản tóm tắt ở đây nhé!",
-    git: "Xem tập tin xây dựng trang web này trong kho GitHub của mình!"
+    git: "Xem tập tin xây dựng trang web này trong kho GitHub của mình nhé!"
   };
 
 app.get('/vnm', function(req, res){
@@ -43,7 +43,7 @@ app.get('/', function(req, res){
   res.render('index', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio, hello:eng.hello, helloTwo:eng.helloTwo, intro:eng.intro, introTwo:eng.introTwo, git:eng.git});
 })
 
-app.get('/vnm-hello', function(req, res){
+app.get('/vnm/hello', function(req, res){
   res.render('introduction', {language:vnm.language, about:vnm.about, connect:vnm.connect, portfolio:vnm.portfolio, git:vnm.git});
 })
 

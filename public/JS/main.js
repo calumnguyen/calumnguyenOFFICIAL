@@ -8,26 +8,27 @@ $('.hamburger').click(function(){
   $('.not-nav').toggleClass('hide');
 });
 
-var alertMessage = [
-  "It's still a rocky road... However, I would love to hear your feedback! Download my resume and connect with me today!",
-  "Unde-lorem Construct-ipsom! However, I would love to hear your feedback! Download my resume and connect with me today!",
-  "Under Construction... However, I would love to hear your feedback on it! Download my resume and connect with me today!!",
-]
+const vnmAlert = "Trang Web đang được cải thiện! Bạn có thể kết nối với mình và đóng góp ý kiến phát triển trang Web này được không?";
+const engAlert = "The site is still under construction... However, I would love to hear your feedback! Download my resume and connect with me today!";
+var alertMessage = "";
+
 
 const randomNumber = Math.floor(Math.random()*3);
 
 $(document).one('mouseleave', function(){
   setTimeout(function(){
-    alert(alertMessage[randomNumber]);
-  }, 1000);
+    alert(alertMessage);
+  }, 1200);
 });
 
 let url = window.location.href.split("/")[3].length;
 let lang = window.location.href.split("/")[3];
 if (url==0){
-  $('#link').attr('href', '/hello');
-  $('#about').attr('href', '/hello');
+  $('#link').attr('href', './hello');
+  $('#about').attr('href', './hello');
+  alertMessage = engAlert;
 } else {
-  $('#link').attr('href', '/'+lang+'-hello');
-  $('#about').attr('href', '/'+lang+'-hello');
+  $('#link').attr('href', './'+lang+'/hello');
+  $('#about').attr('href', './'+lang+'/hello');
+  alertMessage = vnmAlert;
 }
