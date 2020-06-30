@@ -13,14 +13,14 @@ var alertMessage = [
   "Unde-lorem Construct-ipsom! However, I would love to hear your feedback! Download my resume and connect with me today!",
   "Under Construction... However, I would love to hear your feedback on it! Download my resume and connect with me today!!",
 ]
-//
-// const randomNumber = Math.floor(Math.random()*3);
-//
-// $(document).one('mouseleave', function(){
-//   setTimeout(function(){
-//     alert(alertMessage[randomNumber]);
-//   }, 1000);
-// });
+
+const randomNumber = Math.floor(Math.random()*3);
+
+$(document).one('mouseleave', function(){
+  setTimeout(function(){
+    alert(alertMessage[randomNumber]);
+  }, 1000);
+});
 
 let url = window.location.href.split("/")[3].length;
 let lang = window.location.href.split("/")[3];
