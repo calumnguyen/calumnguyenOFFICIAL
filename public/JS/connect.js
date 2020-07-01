@@ -31,54 +31,54 @@ if (url==3){
   $('#porfolio').attr('href', './portfolio');
   alertMessage = engAlert;
 }
-
-function animatedForm(){
-  $('.fa-arrow-circle-down').click(function(){
-    const input = $('.fa-arrow-circle-down').prev()[0];
-    const parent = $('.fa-arrow-circle-down').parent()[0];
-    const nextForm = //how to get the sibling of the parent. Ideally parent.next();
-
-    //Check for validation
-
-    if(input.type ==="text" && validateUser(input)) {
-      nextSlide(parent, nextForm);
-    } else if(input.type ==="email" && validateEmail(email)) {
-      nextSlide(parent, nextForm);
-    }
-  });
-}
-
-  function validateUser(input){
-    const validation = /^[a-zA-Z ]{2,30}$/;
-    if(validation.test(input)){
-      error('#ff2e63');
-      return true;
-    }else {
-    error('#252a34');
-    }
-  }
-
-  function validateEmail(email){
-    const validation = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if(validation.test(email)){
-      error('#ff2e63');
-      return true;
-    }else {
-    error('#252a34');
-    }
-  }
-
-  function error(color){
-  $('.colored-section').css('background-color', color);
-  $('.colored-section').css('opacity', '0.8');
-}
-
-function nextSlide(parent, nextForm){
-  parent.attr('.inactive');
-  parent.removeAttr('.active');
-  nextForm.attr('.active');
-}
-
-
-
-animatedForm();
+//
+// function animatedForm(){
+//   $('.fa-arrow-circle-down').click(function(){
+//     const input = $('.fa-arrow-circle-down').prev()[0];
+//     const parent = $('.fa-arrow-circle-down').parent()[0];
+//     const nextForm = //how to get the sibling of the parent. Ideally parent.next();
+//
+//     //Check for validation
+//
+//     if(input.type ==="text" && validateUser(input)) {
+//       nextSlide(parent, nextForm);
+//     } else if(input.type ==="email" && validateEmail(email)) {
+//       nextSlide(parent, nextForm);
+//     }
+//   });
+// }
+//
+//   function validateUser(input){
+//     const validation = /^[a-zA-Z ]{2,30}$/;
+//     if(validation.test(input)){
+//       error('#ff2e63');
+//       return true;
+//     }else {
+//     error('#252a34');
+//     }
+//   }
+//
+//   function validateEmail(email){
+//     const validation = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+//     if(validation.test(email)){
+//       error('#ff2e63');
+//       return true;
+//     }else {
+//     error('#252a34');
+//     }
+//   }
+//
+//   function error(color){
+//   $('.colored-section').css('background-color', color);
+//   $('.colored-section').css('opacity', '0.8');
+// }
+//
+// function nextSlide(parent, nextForm){
+//   parent.attr('.inactive');
+//   parent.removeAttr('.active');
+//   nextForm.attr('.active');
+// }
+//
+//
+//
+// animatedForm();
