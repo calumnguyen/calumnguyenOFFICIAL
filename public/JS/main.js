@@ -24,7 +24,7 @@ if (url==0){
   $('#link').attr('href', './hello');
   $('#about').attr('href', './hello');
   $('#connect').attr('href', './connect');
-  $('#porfolio').attr('href', './portfolio');
+  $('#portfolio').attr('href', './portfolio');
   alertMessage = engAlert;
 } else {
   $('#link').attr('href', './'+lang+'/hello');
