@@ -51,7 +51,6 @@ nav {
 }
 
 .dropdown {
-  /* Please help */
   position: absolute;
   top: 5%;
   left: 14rem;
@@ -294,11 +293,11 @@ div.active {
     width: 100%;
   }
 
-
   /* .introduction-button {
     display: block;
     width: auto;
     font-size: auto;
     text-decoration: none;
   } */
+
 }
