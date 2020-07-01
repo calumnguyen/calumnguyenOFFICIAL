@@ -21,8 +21,8 @@
     <div class="dropdown">
       <button class="btn btn-secondary btn-small dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=language%></button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="/hello">English</a>
-        <a class="dropdown-item" href="/vnm/hello">Tiếng Việt</a>
+        <a class="dropdown-item" href="/connect">English</a>
+        <a class="dropdown-item" href="/vnm/connect">Tiếng Việt</a>
       </div>
     </div>
 
@@ -34,7 +34,30 @@
     </ul>
   </nav>
 
-
+<section class="colored-section" id="signup">
+  <form class="" action="index.html" method="post">
+    <div class="field-fname active" id="fname">
+      <input type="text" require />
+      <i class="fas fa-arrow-circle-down next"></i>
+    </div>
+    <div class="field-lname inactive">
+      <input type="text" require />
+      <i class="fas fa-arrow-circle-down"></i>
+    </div>
+    <div class="field-email inactive">
+      <input type="email" require />
+      <i class="fas fa-arrow-circle-down"></i>
+    </div>
+    <div class="field-like inactive">
+      <input type="text"/>
+      <i class="fas fa-arrow-circle-down"></i>
+    </div>
+    <div class="field-message inactive">
+      <input type="text"/>
+      <i class="fas fa-arrow-circle-down"></i>
+    </div>
+  </form>
+</section>
 
   <div class="bottom-container">
     <a class="footer-link" href="https://github.com/calumengee/calumnguyenOFFICIAL"><%=git%></a>
@@ -42,7 +65,7 @@
   </div>
 
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-  <script src='/JS/introduction.js' charset='utf-8'></script>
+  <script src='/JS/connect.js' charset='utf-8'></script>
   <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous'></script>
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous'></script>

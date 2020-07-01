@@ -35,6 +35,7 @@ app.set('view engine', 'ejs');
     git: "Xem tập tin xây dựng trang web này trong kho GitHub của mình nhé!"
   };
 
+//Page Routes
 app.get('/vnm', function(req, res){
   res.render('index', {language:vnm.language, about:vnm.about, connect:vnm.connect, portfolio:vnm.portfolio, hello:vnm.hello, helloTwo:vnm.helloTwo, intro:vnm.intro, introTwo:vnm.introTwo, git:vnm.git});
 })
@@ -52,6 +53,23 @@ app.get('/hello', function(req, res){
 })
 
 
+app.get('/vnm/connect', function(req, res){
+  res.render('connect', {language:vnm.language, about:vnm.about, connect:vnm.connect, portfolio:vnm.portfolio, git:vnm.git});
+})
+
+app.get('/connect', function(req, res){
+  res.render('connect', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio, git:eng.git});
+})
+
+app.get('/vnm/portfolio', function(req, res){
+  res.render('portfolio', {language:vnm.language, about:vnm.about, connect:vnm.connect, portfolio:vnm.portfolio, git:vnm.git});
+})
+
+app.get('/portfolio', function(req, res){
+  res.render('portfolio', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio, git:eng.git});
+})
+
+//Contact Form
 
 
 //Confirmation for 'node index.js' or 'nodemon'

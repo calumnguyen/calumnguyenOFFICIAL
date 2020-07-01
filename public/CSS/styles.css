@@ -69,6 +69,68 @@ padding: 5% 15% 7%;
 text-align: left;
 }
 
+#signup {
+  height: 100vh;
+  display: flex;
+  transition: background 0.5s ease;
+  position:relative;
+  color: #252a34;
+  font-size: 1.8rem;
+}
+
+.field-fname,
+.field-lname,
+.field-email,
+.field-like,
+.field-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  height: 50px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.field-fname i,
+.field-lname i,
+.field-email i,
+.field-like i,
+.field-message i {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.field-fname input,
+.field-lname input,
+.field-email input,
+.field-like input,
+.field-message input {
+  background: none;
+  border: none;
+  flex: 1;
+  height: 100%;
+  outline: none;
+  padding-left: 10px;
+}
+
+div.inactive {
+  opacity: 0;
+  cursor: none;
+  transform: translate(-50%, 50%);
+}
+
+div.active {
+  opacity: 1;
+  cursor: all;
+  transform: translate(-50%, -50%);
+}
+
 .fa-arrow-circle-right {
   margin-left: 15px;
 }

@@ -11,24 +11,25 @@ $('.hamburger').click(function(){
 const vnmAlert = "Trang Web đang được cải thiện! Bạn có thể kết nối với mình và đóng góp ý kiến phát triển trang Web này được không?";
 const engAlert = "The site is still under construction... However, I would love to hear your feedback! Download my resume and connect with me today!";
 var alertMessage = "";
-
-
-const randomNumber = Math.floor(Math.random()*3);
-
-$(document).one('mouseleave', function(){
-  setTimeout(function(){
-    alert(alertMessage);
-  }, 1200);
-});
+//
+// $(document).one('mouseleave', function(){
+//   setTimeout(function(){
+//     alert(alertMessage);
+//   }, 1200);
+// });
 
 let url = window.location.href.split("/")[3].length;
 let lang = window.location.href.split("/")[3];
 if (url==0){
   $('#link').attr('href', './hello');
   $('#about').attr('href', './hello');
+  $('#connect').attr('href', './connect');
+  $('#porfolio').attr('href', './portfolio');
   alertMessage = engAlert;
 } else {
   $('#link').attr('href', './'+lang+'/hello');
   $('#about').attr('href', './'+lang+'/hello');
+  $('#connect').attr('href', './'+lang+'/connect');
+  $('#portfolio').attr('href', './'+lang+'/portfolio');
   alertMessage = vnmAlert;
 }
