@@ -8,6 +8,8 @@ $('.hamburger').click(function(){
   $('.not-nav').toggleClass('hide');
 });
 
+
+//Alert pops up when user tries to leave the site
 const vnmAlert = "Trang Web đang được cải thiện! Bạn có thể kết nối với mình và đóng góp ý kiến phát triển trang Web này được không?";
 const engAlert = "The site is still under construction... However, I would love to hear your feedback! Download my resume and connect with me today!";
 var alertMessage = "";
@@ -18,20 +20,24 @@ var alertMessage = "";
 //   }, 1200);
 // });
 
-let url = window.location.href.split("/")[3].length;
-let lang = window.location.href.split("/")[3];
-if (url==3){
-  $('#about').attr('href', './hello');
-  $('#connect').attr('href', './connect');
-  $('#porfolio').attr('href', './portfolio');
-  alertMessage = vnmAlert;
-} else {
-  $('#about').attr('href', './hello');
-  $('#connect').attr('href', './connect');
-  $('#porfolio').attr('href', './portfolio');
-  alertMessage = engAlert;
-}
+// Set routes based on language
+
+// let url = window.location.href.split("/")[3].length;
+// let lang = window.location.href.split("/")[3];
+// if (url==3){
+//   $('#about').attr('href', './hello');
+//   $('#connect').attr('href', './connect');
+//   $('#porfolio').attr('href', './portfolio');
+//   alertMessage = vnmAlert;
+// } else {
+//   $('#about').attr('href', './hello');
+//   $('#connect').attr('href', './connect');
+//   $('#porfolio').attr('href', './portfolio');
+//   alertMessage = engAlert;
+// }
 //
+// Form validation/animation
+
 // function animatedForm(){
 //   $('.fa-arrow-circle-down').click(function(){
 //     const input = $('.fa-arrow-circle-down').prev()[0];

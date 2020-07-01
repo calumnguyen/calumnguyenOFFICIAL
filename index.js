@@ -9,7 +9,8 @@ app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
-//When the user clicks on the homepage, redirect to index.html
+
+// EJS objects to pass language-specific contents and render *.ejs files
 
   let eng = {
     language: "English ",
@@ -36,35 +37,42 @@ app.set('view engine', 'ejs');
   };
 
 //Page Routes
+  //Reroute users to homepage in Vietnamese, redirect to index.ejs with EJS content from vnm object
 app.get('/vnm', function(req, res){
   res.render('index', {language:vnm.language, about:vnm.about, connect:vnm.connect, portfolio:vnm.portfolio, hello:vnm.hello, helloTwo:vnm.helloTwo, intro:vnm.intro, introTwo:vnm.introTwo, git:vnm.git});
 })
 
+//Reroute users to homepage in English, redirect to index.ejs with EJS content from eng object
 app.get('/', function(req, res){
   res.render('index', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio, hello:eng.hello, helloTwo:eng.helloTwo, intro:eng.intro, introTwo:eng.introTwo, git:eng.git});
 })
 
+//Reroute users to Introduction in Vietnamese, redirect to introduction.ejs with EJS content from vnm object
 app.get('/vnm/hello', function(req, res){
   res.render('introduction', {language:vnm.language, about:vnm.about, connect:vnm.connect, portfolio:vnm.portfolio, git:vnm.git});
 })
 
+//Reroute users to Introduction in English, redirect to introduction.ejs with EJS content from eng object
 app.get('/hello', function(req, res){
   res.render('introduction', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio, git:eng.git});
 })
 
-
+//Reroute users to Connect in Vietnamese, redirect to connect.ejs with EJS content from vnm object
 app.get('/vnm/connect', function(req, res){
   res.render('connect', {language:vnm.language, about:vnm.about, connect:vnm.connect, portfolio:vnm.portfolio, git:vnm.git});
 })
 
+//Reroute users to Connect in English, redirect to connect.ejs with EJS content from eng object
 app.get('/connect', function(req, res){
   res.render('connect', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio, git:eng.git});
 })
 
+//Reroute users to Portfolio in Vietnamese, redirect to portfolio.ejs with EJS content from vnm object
 app.get('/vnm/portfolio', function(req, res){
   res.render('portfolio', {language:vnm.language, about:vnm.about, connect:vnm.connect, portfolio:vnm.portfolio, git:vnm.git});
 })
 
+//Reroute users to Portolio in English, redirect to portfolio.ejs with EJS content from eng object
 app.get('/portfolio', function(req, res){
   res.render('portfolio', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio, git:eng.git});
 })

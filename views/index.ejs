@@ -12,6 +12,9 @@
 </head>
 
 <body>
+
+  <!-- Header -->
+    <!-- Hamburger nav-bar/ regular nav-bar -->
   <nav>
     <div class="hamburger">
       <div class="line"></div>
@@ -33,11 +36,20 @@
       <li><a class="nav-tags" id="portfolio"><%=portfolio%></a></li>
     </ul>
   </nav>
+  <!-- End hamburger nav-bar/regular nav-bar -->
+
+<!-- End header -->
+
+<!-- Main body -->
 
   <section class="colored-section" id="title">
     <div class='row'>
+
+      <!-- Introduction "Hello My name is Calum" with language-specific contents through EJS-->
       <div class='col-lg-6'>
         <h1 class='index-description'><%=hello%><span class="calum">Calum</span>. <%=helloTwo%></h1>
+
+      <!-- Navigation buttons with language-specific contents through EJS-->
         <a id="link">
           <button type='button' class='btn btn-outline-light btn-lg introduction-button'><%=intro%><i class="fas fa-arrow-circle-right"></i></button>
         </a>
@@ -45,21 +57,23 @@
           <button type='button' class='btn btn-dark btn-lg introduction-button' ><%=introTwo%><i class="fas fa-arrow-circle-down"></i></button>
         </a>
       </div>
+
+      <!-- Profile Image-->
       <div class='col-lg-6'>
         <img class='profile-image' src='Images/profile.png' title="This image was brought to you by VienYen HoPham." alt='profile-image'>
       </div>
     </div>
   </section>
-  <section class="noncolored-section">
 
+<!-- End main body -->
 
-  </section>
+<!-- Footer -->
   <div class="bottom-container">
     <a class="footer-link" href="https://github.com/calumengee/calumnguyenOFFICIAL"><%=git%></a>
     <p class="copyright">© 2020 Calum Nguyen.</p>
   </div>
 
-
+<!-- End footer -->
 
 
 
