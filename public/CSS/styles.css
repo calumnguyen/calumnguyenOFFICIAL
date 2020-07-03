@@ -1,5 +1,11 @@
 /* General CSS attributes for all routes */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -10,12 +16,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: #8F8F8F;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .fa-arrow-circle-right {
