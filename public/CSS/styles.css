@@ -69,7 +69,6 @@ nav {
 
 .colored-section {
   background-color: #ff2e63;
-  color: #FFF;
   align-items: center;
   display: all;
 }
@@ -103,6 +102,7 @@ nav {
 }
 
 #title {
+  color: #FFF;
   padding: 5% 15% 7%;
   text-align: left;
 }
@@ -125,14 +125,14 @@ nav {
 .field-email,
 .field-like,
 .field-message {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fff;
   height: 50px;
   width: 400px;
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
