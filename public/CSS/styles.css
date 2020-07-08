@@ -112,7 +112,7 @@ nav {
   /* CSS for signup form  */
 
 #signup {
-  height: 100vh;
+  height: 30rem;
   display: flex;
   transition: background 0.5s ease;
   position: relative;
