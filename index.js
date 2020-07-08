@@ -22,7 +22,8 @@ app.use(bodyParser.urlencoded({
     portfolio: "Portfolio",
     hello: "I'm ",
     helloTwo: " It's my pleasure to see you today!",
-    intro: "Please let me introduce myself",
+    // intro: "Please let me introduce myself",
+    intro: "Let's abolish ICE ",
     introTwo: "In a rush? Here's my resume!",
     git: "Find this website on my GitHub repositry!",
     last: "What is your last name?"
