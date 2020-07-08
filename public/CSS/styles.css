@@ -337,5 +337,12 @@ div.active {
   padding-bottom: 10%;
 }
 
+.field-fname,
+.field-lname,
+.field-email,
+.field-like,
+.field-message {
+  width: 80%;
+}
 
 }
