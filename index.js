@@ -83,6 +83,11 @@ app.get('/portfolio', function(req, res){
   res.render('portfolio', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio, git:eng.git});
 })
 
+//Reroute users to Abolish Ice in English, redirect to portfolio.ejs with EJS content from eng object
+app.get('/abolish-ice', function(req, res){
+  res.render('abolish', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio, git:eng.git});
+})
+
 //Contact Form
 const request = require('request');
 const https = require('https');

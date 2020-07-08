@@ -26,16 +26,18 @@ $(document).one('mouseleave', function(){
 let url = window.location.href.split("/")[3].length;
 let lang = window.location.href.split("/")[3];
 if (url==0){
-  $('#link').attr('href', './hello');
+  $('#link').attr('href', './abolish-ice');
   $('#about').attr('href', './hello');
   $('#connect').attr('href', './connect');
   $('#portfolio').attr('href', './portfolio');
+  $('#copyright').attr('href', './');
   alertMessage = engAlert;
 } else {
   $('#link').attr('href', './'+lang+'/hello');
   $('#about').attr('href', './'+lang+'/hello');
   $('#connect').attr('href', './'+lang+'/connect');
   $('#portfolio').attr('href', './'+lang+'/portfolio');
+  $('#copyright').attr('href', './vnm');
   alertMessage = vnmAlert;
 }
 

@@ -28,11 +28,13 @@ let lang = window.location.href.split("/")[3];
 if (url==3){
   $('#about').attr('href', './hello');
   $('#connect').attr('href', './connect');
-  $('#porfolio').attr('href', './portfolio');
+  $('#portfolio').attr('href', './portfolio');
+  $('#copyright').attr('href', '/vnm');
   alertMessage = vnmAlert;
 } else {
   $('#about').attr('href', './hello');
   $('#connect').attr('href', './connect');
-  $('#porfolio').attr('href', './portfolio');
+  $('#portfolio').attr('href', './portfolio');
+  $('#copyright').attr('href', './');
   alertMessage = engAlert;
 }
