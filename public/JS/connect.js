@@ -123,7 +123,7 @@ function animatedForm() {
       $('.field-message').removeClass('inactive');
       if (url == 3) {
         $('#prompt').text('Cuối cùng, '+name+' có muốn gửi mình một lời nhắn không?');
-        $('#message-input').val('Đi ăn chè với '+name+' nha Calum ơi! :)');
+        $('#message-input').val('Đi ăn chè với '+name+' nha Calum ơi!');
       } else {
         $('#prompt').text('Lastly, would you like to send me a message, '+name+'?');
         $('#message-input').val("Let's grab coffee, Calum! - "+name);
