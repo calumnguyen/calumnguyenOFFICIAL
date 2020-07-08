@@ -1,5 +1,5 @@
 //When the user clicks on the hamburger icon
-$('.hamburger').click(function(){
+$('.hamburger').click(function() {
   //activate clip-path in the CSS property 'open' for '.nav-links'
   $('.nav-links').toggleClass('open');
   //activate fading effect by changing the opacity % in CSS property 'fade' for '.nav-tags'
@@ -22,69 +22,149 @@ var alertMessage = "";
 
 // Set routes based on language
 
-// let url = window.location.href.split("/")[3].length;
-// let lang = window.location.href.split("/")[3];
-// if (url==3){
-//   $('#about').attr('href', './hello');
-//   $('#connect').attr('href', './connect');
-//   $('#porfolio').attr('href', './portfolio');
-//   alertMessage = vnmAlert;
-// } else {
-//   $('#about').attr('href', './hello');
-//   $('#connect').attr('href', './connect');
-//   $('#porfolio').attr('href', './portfolio');
-//   alertMessage = engAlert;
-// }
-//
+let url = window.location.href.split("/")[3].length;
+let lang = window.location.href.split("/")[3];
+if (url == 3) {
+  $('#about').attr('href', './hello');
+  $('#connect').attr('href', './connect');
+  $('#porfolio').attr('href', './portfolio');
+  alertMessage = vnmAlert;
+} else {
+  $('#about').attr('href', './hello');
+  $('#connect').attr('href', './connect');
+  $('#porfolio').attr('href', './portfolio');
+  alertMessage = engAlert;
+}
+
 // Form validation/animation
 
-// function animatedForm(){
-//   $('.fa-arrow-circle-down').click(function(){
-//     const input = $('.fa-arrow-circle-down').prev()[0];
-//     const parent = $('.fa-arrow-circle-down').parent()[0];
-//     const nextForm = //how to get the sibling of the parent. Ideally parent.next();
-//
-//     //Check for validation
-//
-//     if(input.type ==="text" && validateUser(input)) {
-//       nextSlide(parent, nextForm);
-//     } else if(input.type ==="email" && validateEmail(email)) {
-//       nextSlide(parent, nextForm);
-//     }
-//   });
-// }
-//
-//   function validateUser(input){
-//     const validation = /^[a-zA-Z ]{2,30}$/;
-//     if(validation.test(input)){
-//       error('#ff2e63');
-//       return true;
-//     }else {
-//     error('#252a34');
-//     }
-//   }
-//
-//   function validateEmail(email){
-//     const validation = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-//     if(validation.test(email)){
-//       error('#ff2e63');
-//       return true;
-//     }else {
-//     error('#252a34');
-//     }
-//   }
-//
-//   function error(color){
-//   $('.colored-section').css('background-color', color);
-//   $('.colored-section').css('opacity', '0.8');
-// }
-//
-// function nextSlide(parent, nextForm){
-//   parent.attr('.inactive');
-//   parent.removeAttr('.active');
-//   nextForm.attr('.active');
-// }
-//
-//
-//
-// animatedForm();
+function animatedForm() {
+  // Last Name
+  $('.fa-arrow-circle-down.lname').click(function() {
+
+    lname = $('.fa-arrow-circle-down.lname').prev().val()
+
+    if (validateUser(lname)) {
+      $('.field-lname').addClass('inactive');
+      $('.field-lname').removeClass('active');
+      $('.field-fname').addClass('active');
+      $('.field-fname').removeClass('inactive');
+      if (url == 3) {
+        $('#prompt').text('Tên bạn là gì?');
+      } else {
+        $('#prompt').text('What is your preferred first name?');
+      }
+      console.log('Last name ',lname);
+    } else{
+      $('.field-lname').css('animation','shake 0.5s ease');
+      console.log('Wrong last name type');
+    }
+
+
+  });
+
+  // First Name
+  $('.fa-arrow-circle-down.fname').click(function() {
+
+    fname = $('.fa-arrow-circle-down.fname').prev().val()
+
+    if (validateUser(fname)) {
+      $('.field-fname').addClass('inactive');
+      $('.field-fname').removeClass('active');
+      $('.field-email').addClass('active');
+      $('.field-email').removeClass('inactive');
+      if (url == 3) {
+        $('#prompt').text('Địa chỉ email của bạn là gì?');
+      } else {
+        $('#prompt').text('What is your email address?');
+      }
+      console.log('First name ',fname);
+    } else{
+      $('.field-fname').css('animation','shake 0.5s ease');
+      console.log('Wrong first name type')
+    }
+  });
+
+  // Email
+  $('.fa-arrow-circle-down.email').click(function() {
+
+    email = $('.fa-arrow-circle-down.email').prev().val()
+
+    if (validateEmail(email)) {
+      $('.field-email').addClass('inactive');
+      $('.field-email').removeClass('active');
+      $('.field-like').addClass('active');
+      $('.field-like').removeClass('inactive');
+      if (url == 3) {
+        $('#prompt').text('Bạn hứng thú về lĩnh vực nào nhỉ?');
+      } else {
+        $('#prompt').text('Which areas of study are you interested in?');
+      }
+      console.log('Email ',email);
+    } else{
+      $('.field-email').css('animation','shake 0.5s ease');
+      console.log('Wrong Email type')
+    }
+  });
+
+
+  // Like, interests
+  $('.fa-arrow-circle-down.like').click(function() {
+
+    like = $('.fa-arrow-circle-down.like').prev().val()
+      $('.field-like').addClass('inactive');
+      $('.field-like').removeClass('active');
+      $('.field-message').addClass('active');
+      $('.field-message').removeClass('inactive');
+      if (url == 3) {
+        $('#prompt').text('Cuối cùng, bạn có muốn gửi một lời nhắn không?');
+      } else {
+        $('#prompt').text('Lastly, would you like to send me a message?');
+      }
+      console.log('Like ',like);
+
+  });
+
+  // Message
+  $('.fa-arrow-circle-down.message').click(function() {
+    message = $('.fa-arrow-circle-down.message').prev().val()
+        console.log('message ',message);
+  });
+
+};
+
+
+function validateUser(input) {
+  const validation = /^[a-zA-Z ]{2,30}$/;
+  if (validation.test(input)) {
+    error('#ff2e63');
+    return true;
+  } else {
+    error('#252a34');
+  }
+}
+
+function validateEmail(email) {
+  const validation = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (validation.test(email)) {
+    error('#ff2e63');
+    return true;
+  } else {
+    error('#252a34');
+  }
+}
+
+// Return keypress = button clicks
+
+$('body').keydown(function(event){
+  if (event.keyCode == 13){
+      event.preventDefault();
+      return false;
+  }
+})
+
+function error(color) {
+  $('.colored-section').css('background-color', color);
+}
+
+animatedForm();

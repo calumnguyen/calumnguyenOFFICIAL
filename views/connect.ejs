@@ -43,30 +43,34 @@
   <!-- Main body -->
 
     <!-- Form validation and animation -->
-<section class="colored-section">
+<section class="colored-section" id="signup">
   <div class="row">
-  <form class="" action="index.html" method="post">
-    <div class="field-fname active">
-      <input type="text" require />
-      <i class="fas fa-arrow-circle-down next"></i>
+    <div class='col'id='connect-message'>
+      <h1 id='prompt'> <%=last%> </h>
     </div>
-    <div class="field-lname inactive">
-      <input type="text" require />
-      <i class="fas fa-arrow-circle-down"></i>
-    </div>
-    <div class="field-email inactive">
-      <input type="email" require />
-      <i class="fas fa-arrow-circle-down"></i>
-    </div>
-    <div class="field-like inactive">
-      <input type="text"/>
-      <i class="fas fa-arrow-circle-down"></i>
-    </div>
-    <div class="field-message inactive">
-      <input type="text"/>
-      <i class="fas fa-arrow-circle-down"></i>
-    </div>
-  </form>
+      <form class="" action="/connect" method="POST">
+        <div class="field-lname active">
+          <input type="text" name="lName" require />
+          <i class="fas fa-arrow-circle-down lname"></i>
+        </div>
+        <div class="field-fname inactive">
+          <input type="text" name="fName" require />
+          <i class="fas fa-arrow-circle-down fname"></i>
+        </div>
+        <div class="field-email inactive">
+          <input type="email" name="email" require/>
+          <i class="fas fa-arrow-circle-down email"></i>
+        </div>
+        <div class="field-like inactive">
+          <input type="text" name="like"/>
+          <i class="fas fa-arrow-circle-down like"></i>
+        </div>
+        <div class="field-message inactive">
+          <input type="text" name="message"/>
+          <button type ="submit" class="fas fa-arrow-circle-down message"></button>
+        </div>
+      </form>
+
   </div>
 </section>
 
