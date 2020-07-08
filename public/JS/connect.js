@@ -161,6 +161,7 @@ $('.doNotPost').keydown(function(event){
       event.preventDefault();
       var target = event.target;
       $(target).next().trigger('click');
+      $(target).parent().next().children().focus();
       return false;
   }
 })
