@@ -156,9 +156,11 @@ function validateEmail(email) {
 
 // Return keypress = button clicks
 
-$('body').keydown(function(event){
+$('.doNotPost').keydown(function(event){
   if (event.keyCode == 13){
       event.preventDefault();
+      var target = event.target;
+      $(target).next().trigger('click');
       return false;
   }
 })
