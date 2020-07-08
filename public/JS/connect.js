@@ -39,6 +39,8 @@ if (url == 3) {
 // Form validation/animation
 
 function animatedForm() {
+
+  var name = "";
   // Last Name
   $('.fa-arrow-circle-down.lname').click(function() {
 
@@ -67,6 +69,7 @@ function animatedForm() {
   $('.fa-arrow-circle-down.fname').click(function() {
 
     fname = $('.fa-arrow-circle-down.fname').prev().val()
+    name = fname;
 
     if (validateUser(fname)) {
       $('.field-fname').addClass('inactive');
@@ -74,9 +77,9 @@ function animatedForm() {
       $('.field-email').addClass('active');
       $('.field-email').removeClass('inactive');
       if (url == 3) {
-        $('#prompt').text('Địa chỉ email của bạn là gì?');
+        $('#prompt').text('Địa chỉ email của '+name+' là gì?');
       } else {
-        $('#prompt').text('What is your email address?');
+        $('#prompt').text('What is your email address, '+name+'?');
       }
       console.log('First name ',fname);
     } else{
@@ -96,9 +99,11 @@ function animatedForm() {
       $('.field-like').addClass('active');
       $('.field-like').removeClass('inactive');
       if (url == 3) {
-        $('#prompt').text('Bạn hứng thú về lĩnh vực nào nhỉ?');
+        $('#prompt').text(name+' ơi, '+name+' hứng thú về lĩnh vực nào nhỉ?');
+        $('#like-input').val('Tất cả mọi lĩnh vực!');
       } else {
-        $('#prompt').text('Which areas of study are you interested in?');
+        $('#prompt').text('Which areas of study are you interested in, '+name+'?');
+        $('#like-input').val('Everything!');
       }
       console.log('Email ',email);
     } else{
@@ -117,9 +122,11 @@ function animatedForm() {
       $('.field-message').addClass('active');
       $('.field-message').removeClass('inactive');
       if (url == 3) {
-        $('#prompt').text('Cuối cùng, bạn có muốn gửi một lời nhắn không?');
+        $('#prompt').text('Cuối cùng, '+name+' có muốn gửi mình một lời nhắn không?');
+        $('#message-input').val('Đi ăn chè với '+name+' nha Calum ơi! :)');
       } else {
-        $('#prompt').text('Lastly, would you like to send me a message?');
+        $('#prompt').text('Lastly, would you like to send me a message, '+name+'?');
+        $('#message-input').val("Let's grab coffee, Calum! - "+name);
       }
       console.log('Like ',like);
 
