@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html lang='en' dir='ltr'>
-
-<head>
-  <meta charset='utf-8'>
-  <title>Calum Nguyen</title>
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous'>
-  <link rel='stylesheet' href='/CSS/styles.css'>
-  <link rel='icon' href='/Images/favicon.ico'>
-  <link href='https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap' rel='stylesheet'>
-  <script src='https://kit.fontawesome.com/b960960fe5.js' crossorigin='anonymous'></script>
-</head>
-
-<body>
-
-  <!-- Header -->
-    <!-- Hamburger nav-bar/ regular nav-bar -->
-  <nav>
-    <div class="hamburger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-    <div class="dropdown">
-      <button class="btn btn-secondary btn-small dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=language%></button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="/hello">English</a>
-        <a class="dropdown-item" href="/vnm/hello">Tiếng Việt</a>
-      </div>
-    </div>
-
-    <ul class="nav-links">
-
-      <li><a class="nav-tags" id="about" href="./hello"><%=about%></a></li>
-      <li><a class="nav-tags" id="connect" href="./connect"><%=connect%></a></li>
-      <li><a class="nav-tags" id="portfolio" href="./portfolio"><%=portfolio%></a></li>
-    </ul>
-  </nav>
-  <!-- End hamburger nav-bar/regular nav-bar -->
-
-<!-- End header -->
+<%- include("header") -%>
 
 <!-- Main body -->
 
