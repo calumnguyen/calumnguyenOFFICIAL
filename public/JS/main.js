@@ -29,14 +29,14 @@ $('#vietnamese').attr('href', '/vnm');
 let url = window.location.href.split("/")[3].length;
 let lang = window.location.href.split("/")[3];
 if (url==0){
-  $('#link').attr('href', './abolish-ice');
+  $('#link').attr('href', './portfolio');
   $('#about').attr('href', './hello');
   $('#connect').attr('href', './connect');
   $('#portfolio').attr('href', './portfolio');
   $('#copyright').attr('href', './');
   alertMessage = engAlert;
 } else {
-  $('#link').attr('href', './'+lang+'/hello');
+  $('#link').attr('href', './'+lang+'/portfolio');
   $('#about').attr('href', './'+lang+'/hello');
   $('#connect').attr('href', './'+lang+'/connect');
   $('#portfolio').attr('href', './'+lang+'/portfolio');

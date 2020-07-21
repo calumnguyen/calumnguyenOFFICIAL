@@ -22,11 +22,13 @@ app.use(bodyParser.urlencoded({
     portfolio: "Portfolio",
     hello: "I'm ",
     helloTwo: " It's my pleasure to see you today!",
-    // intro: "Please let me introduce myself",
-    intro: "Let's abolish ICE ",
+    intro: "Let's take a look at my portfolio",
     introTwo: "In a rush? Here's my resume!",
     git: "Find this website on my GitHub repositry!",
-    last: "What is your last name?"
+    last: "What is your last name?",
+    banner1: "Hi there!",
+    banner2: "It's such a pleasure to have you here.",
+    bannerbutton: "Download my resume"
   };
 
   let vnm = {
@@ -36,10 +38,13 @@ app.use(bodyParser.urlencoded({
     portfolio: "Hồ Sơ Năng Lực",
     hello: "Mình là ",
     helloTwo: " Rất vui khi được bạn đến thăm!",
-    intro: "Cho mình được tự giới thiệu về bản thân",
+    intro: "Xem qua hồ sơ năng lực của mình",
     introTwo: "Nếu bạn đang vội, xem qua bản tóm tắt ở đây nhé!",
     git: "Xem tập tin xây dựng trang web này trong kho GitHub của mình nhé!",
-    last: "Họ của bạn là gì?"
+    last: "Họ của bạn là gì?",
+    banner1: "Chào bạn!",
+    banner2: "Rất vui được gặp bạn ngày hôm nay.",
+    bannerbutton: "Tải bản tóm tắt năng lực của mình"
   };
 
 //Page Routes
@@ -55,12 +60,12 @@ app.get('/', function(req, res){
 
 //Reroute users to Introduction in Vietnamese, redirect to introduction.ejs with EJS content from vnm object
 app.get('/vnm/hello', function(req, res){
-  res.render('introduction', {language:vnm.language, about:vnm.about, connect:vnm.connect, portfolio:vnm.portfolio, git:vnm.git});
+  res.render('introduction', {language:vnm.language, about:vnm.about, connect:vnm.connect, portfolio:vnm.portfolio, git:vnm.git, banner1:vnm.banner1, banner2:vnm.banner2, bannerbutton: vnm.bannerbutton});
 })
 
 //Reroute users to Introduction in English, redirect to introduction.ejs with EJS content from eng object
 app.get('/hello', function(req, res){
-  res.render('introduction', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio, git:eng.git});
+  res.render('introduction', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio, git:eng.git, banner1:eng.banner1, banner2:eng.banner2, bannerbutton: eng.bannerbutton});
 })
 
 //Reroute users to Connect in Vietnamese, redirect to connect.ejs with EJS content from vnm object
@@ -81,11 +86,6 @@ app.get('/vnm/portfolio', function(req, res){
 //Reroute users to Portolio in English, redirect to portfolio.ejs with EJS content from eng object
 app.get('/portfolio', function(req, res){
   res.render('portfolio', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio, git:eng.git});
-})
-
-//Reroute users to Abolish Ice in English, redirect to portfolio.ejs with EJS content from eng object
-app.get('/abolish-ice', function(req, res){
-  res.render('abolish', {language:eng.language, about:eng.about, connect:eng.connect, portfolio:eng.portfolio, git:eng.git});
 })
 
 //Contact Form
@@ -131,13 +131,12 @@ app.post('/connect', function(req, res) {
       }
       if (response.statusCode === 200) {
         console.log("Succesfully submiting subscription")
-        // res.sendFile(__dirname + "/success.html")
+        res.redirect("/");
       } else {
         console.log("Error submiting subscription")
         console.log(response.statusCode)
         console.log(response)
-
-        // res.sendFile(__dirname + "/failure.html")
+        res.redirect("/connect");
       }
 
     })

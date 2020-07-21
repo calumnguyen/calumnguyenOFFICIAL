@@ -68,6 +68,7 @@ nav {
 /* General CSS for main body with color */
 
 .colored-section {
+  color: #fff;
   background-color: #ff2e63;
   align-items: center;
   display: all;
@@ -204,6 +205,73 @@ div.active {
   100%{
     transform: translate(-50%,-50%) rotate(0deg);
   }
+}
+
+/* introduction.ejs */
+
+.img-container {
+  background-image: url("../Images/banner1.png");
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.inner-container {
+  padding: 100px;
+  text-align: left;
+  position: absolute;
+  width: 100%;
+  color: #FFF;
+  height: auto;
+  margin-top: 200px;
+}
+
+.inner-container h1 {
+  margin-top: -160px;
+  font-size: 6.5rem;
+}
+
+.inner-container h2 {
+  margin-left: 7px;
+  margin-top: 15px;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.banner-button {
+  margin-top: 20px;
+}
+
+.banner-image {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+@media only screen and (max-width: 920px) {
+  .inner-container h1 {
+    margin-top: 80px;
+  }
+
+  .inner-container {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .inner-container {
+    margin-top: 150px;
+  }
+  .inner-container h1 {
+    font-size: 5rem;
+  }
+
+  .inner-container h2 {
+    font-size: 1.4rem;
+  }
+
 }
 
 /* General CSS for footer */
