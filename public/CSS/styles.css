@@ -210,7 +210,7 @@ div.active {
 /* introduction.ejs */
 
 .img-container {
-  background-image: url("../Images/banner1.png");
+  background-image: url("../Images/banner.png");
   height: 700px;
   background-position: center;
   background-repeat: no-repeat;
@@ -242,12 +242,6 @@ div.active {
 
 .banner-button {
   margin-top: 20px;
-}
-
-.banner-image {
-  width: 50%;
-  display: inline-block;
-  position: relative;
 }
 
 @media only screen and (max-width: 920px) {
