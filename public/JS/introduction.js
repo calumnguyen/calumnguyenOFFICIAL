@@ -41,3 +41,8 @@ if (url==3){
   $('#copyright').attr('href', './');
   alertMessage = engAlert;
 }
+
+// Footer getFullYear
+
+const year = new Date().getFullYear();
+$('#copyright').text('© '+year+' Calum Nguyen.');

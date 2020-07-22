@@ -183,3 +183,8 @@ function error(color) {
 }
 
 animatedForm();
+
+// Footer getFullYear
+
+const year = new Date().getFullYear();
+$('#copyright').text('© '+year+' Calum Nguyen.');

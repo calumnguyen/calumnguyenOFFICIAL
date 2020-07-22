@@ -246,7 +246,7 @@ div.active {
 
 @media only screen and (max-width: 920px) {
   .inner-container h1 {
-    margin-top: 80px;
+    margin-top: -60px;
   }
 
   .inner-container {
