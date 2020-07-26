@@ -207,7 +207,7 @@ div.active {
 /* introduction.ejs */
 
 .img-container {
-  background-image: url("../Images/banner.png");
+  background-image: url("https://res.cloudinary.com/calumnguyen/image/upload/v1595803123/banner_te9wvp.png");
   height: 700px;
   background-position: center;
   background-repeat: no-repeat;
