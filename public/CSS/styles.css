@@ -28,7 +28,7 @@ p {
 
 /* CSS for nav-bar and hamburger */
 
-nav {
+nav  {
   height: 10vh;
   background: #252a34;
 }
@@ -68,6 +68,7 @@ nav {
 /* General CSS for main body with color */
 
 .colored-section {
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   color: #fff;
   background-color: #ff2e63;
   align-items: center;
