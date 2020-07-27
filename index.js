@@ -118,7 +118,7 @@ app.post('/connect', function(req, res) {
       url: "https://us10.api.mailchimp.com/3.0/lists/a461eb083b",
       method: "POST",
       headers: {
-        "Authorization": "apikey f41465faf8073b75aafa5a822e3a4138-us10"
+        "Authorization": process.env.MAILCHIMP_API
       },
       body: jsonData,
 
