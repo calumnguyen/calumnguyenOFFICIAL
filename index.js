@@ -136,7 +136,7 @@ app.post('/connect', function(req, res) {
         console.log("Error submiting subscription")
         console.log(response.statusCode)
         console.log(response)
-        res.redirect("/connect");
+        res.send(response.statusCode, response);
       }
 
     })
