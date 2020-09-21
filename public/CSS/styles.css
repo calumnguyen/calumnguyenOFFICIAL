@@ -109,6 +109,20 @@ nav  {
 
   /* CSS for signup form  */
 
+.connect-block {
+  display: inline-block;
+
+}
+
+.connect-image {
+  width: 20%;
+  margin: 20px auto;
+}
+
+.question-connect {
+  margin: auto auto 40px auto;
+}
+
 #signup {
   height: 40rem;
   display: flex;
@@ -411,6 +425,11 @@ div.active {
 .field-message {
   width: 80%;
   margin-top: 7%;
+}
+
+.connect-image {
+  margin-top: 20%;
+  width: 40%;
 }
 
 }
