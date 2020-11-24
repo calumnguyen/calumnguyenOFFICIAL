@@ -1,5 +1,5 @@
 //When the user clicks on the hamburger icon
-$('.hamburger').click(function(){
+$('.hamburger').click(function () {
   //activate clip-path in the CSS property 'open' for '.nav-links'
   $('.nav-links').toggleClass('open');
   //activate fading effect by changing the opacity % in CSS property 'fade' for '.nav-tags'
@@ -10,33 +10,39 @@ $('.hamburger').click(function(){
 
 //Alert pops up when user tries to leave the site
 
-const vnmAlert = "Trang Web đang được cải thiện! Bạn có thể kết nối với mình và đóng góp ý kiến phát triển trang Web này được không?";
-const engAlert = "The site is still under construction... However, I would love to hear your feedback! Download my resume and connect with me today!";
-var alertMessage = "";
+const vnmAlert =
+  'Trang Web đang được cải thiện! Bạn có thể kết nối với mình và đóng góp ý kiến phát triển trang Web này được không?';
+const engAlert =
+  'The site is still under construction... However, I would love to hear your feedback! Download my resume and connect with me today!';
+var alertMessage = '';
 
-// $(document).one('mouseleave', function(){
-//   setTimeout(function(){
-//     alert(alertMessage);
-//   }, 1200);
-// });
+$(document).one('mouseleave', function () {
+  setTimeout(function () {
+    alert(alertMessage);
+  }, 1200);
+});
 
 // Set routes based on language
 
 $('#english').attr('href', '/portfolio');
 $('#vietnamese').attr('href', '/vnm/portfolio');
 
-let url = window.location.href.split("/")[3].length;
-let lang = window.location.href.split("/")[3];
-if (url==3){
+let url = window.location.href.split('/')[3].length;
+let lang = window.location.href.split('/')[3];
+if (url == 3) {
   $('#about').attr('href', './hello');
-  $('#connect').attr('href', './connect');
-  $('#portfolio').attr('href', './portfolio');
+  // $('#connect').attr('href', './connect');
+  // $('#portfolio').attr('href', './portfolio');
+  $('#connect').attr('href', './404');
+  $('#portfolio').attr('href', './404');
   $('#copyright').attr('href', '/vnm');
   alertMessage = vnmAlert;
 } else {
   $('#about').attr('href', './hello');
-  $('#connect').attr('href', './connect');
-  $('#portfolio').attr('href', './portfolio');
+  // $('#connect').attr('href', './connect');
+  // $('#portfolio').attr('href', './portfolio');
+  $('#connect').attr('href', './404');
+  $('#portfolio').attr('href', './404');
   $('#copyright').attr('href', './');
   alertMessage = engAlert;
 }
@@ -44,4 +50,4 @@ if (url==3){
 // Footer getFullYear
 
 const year = new Date().getFullYear();
-$('#copyright').text('© '+year+' Calum Nguyen.');
+$('#copyright').text('© ' + year + ' Calum Nguyen.');
